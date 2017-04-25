@@ -12,7 +12,6 @@ class Kernel extends WandConsoleKernel
      * @var array
      */
     protected $commands = [
-        \AHuggins\Wand\Commands\TestCommand::class,
         \AHuggins\Wand\Commands\ConsoleMakeCommand::class,
     ];
 
