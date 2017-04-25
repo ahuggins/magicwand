@@ -11,7 +11,7 @@ class WandServiceProvider extends ServiceProvider
      *
      * @var bool
      */
-    protected $defer = true;
+    protected $defer = false;
 
     /**
      * The commands to be registered.
@@ -24,7 +24,7 @@ class WandServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__ . '/../routes/wand.php' => base_path('routes/wand.php'),
-            __DIR__ . '/../magicwand' => basepath('wand')
+            __DIR__ . '/../magicwand' => base_path('wand')
         ]);
     }
 
