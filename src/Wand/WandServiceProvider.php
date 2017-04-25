@@ -35,10 +35,7 @@ class WandServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton(
-            AHuggins\Wand\WandConsoleKernel::class,
-            AHuggins\Wand\Kernel::class
-        );
+        
     }
 
     /**

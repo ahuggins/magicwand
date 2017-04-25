@@ -28,6 +28,11 @@ $app = require_once __DIR__.'/bootstrap/app.php';
 |
 */
 
+$app->singleton(
+    \AHuggins\Wand\WandConsoleKernel::class,
+    \AHuggins\Wand\Kernel::class
+);
+
 $kernel = $app->make(AHuggins\Wand\WandConsoleKernel::class);
 
 $status = $kernel->handle(
