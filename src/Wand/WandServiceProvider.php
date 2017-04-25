@@ -2,6 +2,8 @@
 
 namespace AHuggins\Wand;
 
+use Illuminate\Support\ServiceProvider;
+
 class WandServiceProvider extends ServiceProvider
 {
     /**
