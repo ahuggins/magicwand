@@ -27,10 +27,14 @@ $app = require_once __DIR__.'/bootstrap/app.php';
 | or another output device for the developers. Here goes nothing!
 |
 */
+$kernelClass = \AHuggins\Wand\Kernel::class;
+if (file_exists(app_path('Wand/Kernel.php'))) {
+    $kernelClass = \App\Wand\Kernel::class;
+}
 
 $app->singleton(
     \AHuggins\Wand\WandConsoleKernel::class,
-    \AHuggins\Wand\Kernel::class
+    $kernelClass
 );
 
 $kernel = $app->make(AHuggins\Wand\WandConsoleKernel::class);

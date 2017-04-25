@@ -24,7 +24,8 @@ class WandServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__ . '/../routes/wand.php' => base_path('routes/wand.php'),
-            __DIR__ . '/../magicwand' => base_path('wand')
+            __DIR__ . '/../magicwand' => base_path('wand'),
+            __DIR__ . '/KernelToCopy.php' => app_path('Wand/Kernel.php'),
         ]);
     }
 
