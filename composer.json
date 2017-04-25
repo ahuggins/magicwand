@@ -1,0 +1,17 @@
+{
+    "name": "ahuggins/magicwand",
+    "description": "A Laravel CLI package, for standalone CLI apps",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew Huggins",
+            "email": "andrewhuggins@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "AHuggins\\Wand": "src/"
+        }
+    }
+}
