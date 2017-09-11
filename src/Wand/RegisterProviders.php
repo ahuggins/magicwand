@@ -24,6 +24,7 @@ class RegisterProviders
             \Illuminate\Database\DatabaseServiceProvider::class,
             \Illuminate\Encryption\EncryptionServiceProvider::class,
             \Illuminate\Filesystem\FilesystemServiceProvider::class,
+            \Illuminate\Foundation\Providers\ComposerServiceProvider::class,
             \Illuminate\Foundation\Providers\FoundationServiceProvider::class,
             \Illuminate\Hashing\HashServiceProvider::class,
             \Illuminate\Mail\MailServiceProvider::class,
